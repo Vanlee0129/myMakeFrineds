@@ -6,9 +6,9 @@ page {
 }
 
 .tab-bar {
-  width: 747rpx;
+  width: 750rpx;
   height: 100rpx;
-  border-radius: 40rpx 40rpx 0 0;
+  /* border-radius: 40rpx 40rpx 0 0; */
   background: white;
   top: 0rpx;
   position: fixed;

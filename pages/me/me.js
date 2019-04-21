@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    sex:['未知','男','女'],
+    index:''
   },
 
   mypost(){
@@ -38,7 +39,17 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    var that = this
+    wx.getUserInfo({
+      success(res) {
+        const userInfo = res.userInfo
+        const nickName = userInfo.nickName
+        const gender = userInfo.gender // 性别 0：未知、1：男、2：女
+        that.setData({
+          index: gender
+        })
+      }
+    })
   },
 
   /**

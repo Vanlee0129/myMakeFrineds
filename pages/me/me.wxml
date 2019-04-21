@@ -8,7 +8,7 @@
       <open-data type="userNickName"></open-data>
     </view>
     <view class='mySchool'>学校：上海海事大学</view>
-    <view class='mySex'>性别：男</view>
+    <view class='mySex'>性别：{{sex[index]}}</view>
     <view class='myBirth'>生日：1997-01-29</view>
   </view>
   <view class='myPost-container' bindtap='mypost'>

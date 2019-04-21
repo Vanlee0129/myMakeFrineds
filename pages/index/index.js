@@ -1,29 +1,41 @@
-// pages/home/home.js
-var util = require('../../utils/util.js')
-var log = util.log
-var api = require('../../api/api.js').api
-var loginApi = require('../../api/login_api.js').loginApi
-var getLoginToken = loginApi.getLoginToken
-let parseTime = util.parseTime
-let readableTime = util.readableTime
+// pages/index/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    idx: true,
-    idxx: false,
-    like:100,
-    comment:100,
-    collection:100,
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    wx.getSetting({
+      success(res) {
+        if (res.authSetting['scope.userInfo']) {
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
+          wx.getUserInfo({
+            success(res) {
+              console.log(res.userInfo)
+              wx.switchTab({
+                url: '/pages/home/home',
+                success: function(e) {
+                  var page = getCurrentPages().pop();
+                  if (page == undefined || page == null) return;
+                  page.onShow();
+                }
+              })
+            }
+          })
+        }
+      }
+    })
+  },
 
+  bindGetUserInfo(e) {
+    console.log(e.detail.userInfo)
   },
 
   /**
@@ -37,9 +49,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-    wx.showTabBar({
-      
-    })
+
   },
 
   /**
@@ -75,29 +85,5 @@ Page({
    */
   onShareAppMessage: function() {
 
-  },
-
-  changeColor(e) {
-    var that = this
-    console.log(e)
-    let index = e.currentTarget.dataset.index;
-    if (index == 1) {
-      that.setData({
-        idx: false,
-        idxx: true
-      })
-    } else {
-      that.setData({
-        idx: true,
-        idxx: false
-      })
-    }
-  },
-
-  details(){
-    var that = this
-    wx.navigateTo({
-      url: '../details/details',
-    })
   }
 })
