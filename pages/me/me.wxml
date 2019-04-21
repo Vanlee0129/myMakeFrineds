@@ -1,8 +1,12 @@
 <view class="me-container">
   <view class='head-background'></view>
   <view class='me-card'>
-    <view class='myTx'></view>
-    <view class='myName'>我是用户名</view>
+    <view class='myTx'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='myName'>
+      <open-data type="userNickName"></open-data>
+    </view>
     <view class='mySchool'>学校：上海海事大学</view>
     <view class='mySex'>性别：男</view>
     <view class='myBirth'>生日：1997-01-29</view>

@@ -32,6 +32,7 @@ page{
   margin-left: 60rpx;
   top: 60rpx;
   position: absolute;
+  overflow: hidden;
 }
 
 .myName{
