@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/me/me",
+    "pages/post/post",
+    "pages/details/details",
+    "pages/mypost/mypost",
+    "pages/myclo/myclo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFC0CB",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false,
+    "navigationStyle": "default"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#FFC0CB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/tabBar/discover.png",
+        "selectedIconPath": "images/tabBar/sclectDiscover.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/post/post",
+        "iconPath": "images/tabBar/add.png",
+        "selectedIconPath": "images/tabBar/add.png",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "images/tabBar/me.png",
+        "selectedIconPath": "images/tabBar/sclectMe.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+<view class='nav-container'>
+  <view class='tab-bar'>
+    <view class='navback' bindtap='navback'>
+      <image src='/images/tabBar/cancel.png' class='cencelImage'></image>
+    </view>
+    <view class='navpost'>
+      <image src='/images/tabBar/post.png' class='postImage'></image>
+    </view>
+  </view>
+</view>
+
+<view class='content-container'>
+  <view class='content'>
+    <textarea class='inputarea' placeholder-class="input_null" maxlength="-1" focus="{{releaseFocus}}" placeholder="您的内容 {{releaseName}}" bindfocus='getfocus' bindblur='delfocus' show-confirm-bar='{{false}}'></textarea>
+  </view>
+</view>
+
+<view class='bar-container' style='bottom: {{pheight}};'>
+  <view class='bar-content'>
+    <image src='/images/tabBar/ima.png' class='ima'></image>
+    <image src='/images/tabBar/say.png' class='ima'></image>
+    <image src='/images/tabBar/loc.png' class='ima'></image>
+  </view>
+</view>

@@ -1,0 +1,121 @@
+page{
+  background: rgba(242, 244, 243, 1);
+  width: 750rpx;
+}
+
+.me-container{
+  width: 750rpx;
+}
+
+.head-background{
+  width: 750rpx;
+  height: 300rpx;
+  background: #FFC0CB;
+}
+
+.me-card{
+  width: 670rpx;
+  height: 400rpx;
+  position: relative;
+  top: -200rpx;
+  left: 40rpx;
+  background: white;
+  z-index: 100;
+  border-radius: 20rpx; 
+}
+
+.myTx{
+  width: 100rpx;
+  height: 100rpx;
+  background: rgba(242, 244, 243, 1);
+  border-radius: 50%;
+  margin-left: 60rpx;
+  top: 60rpx;
+  position: absolute;
+}
+
+.myName{
+  font-size: 28rpx;
+  font-family: PingFang-SC-Bold;
+  font-weight: bold;
+  color: #373A39;
+  position: relative;
+  margin-left: 200rpx;
+  top: 90rpx;
+}
+
+.mySchool{
+  font-size: 24rpx;
+  color: #373A39;
+  position: relative;
+  margin-left: 200rpx;
+  top: 120rpx;
+}
+
+.mySex{
+  font-size: 24rpx;
+  color: #373A39;
+  position: relative;
+  margin-left: 200rpx;
+  top: 144rpx;
+}
+
+.myBirth{
+  font-size: 24rpx;
+  color: #373A39;
+  position: relative;
+  margin-left: 200rpx;
+  top: 168rpx;
+}
+
+.myPost-container{
+  width: 670rpx;
+  height: 100rpx;
+  position: relative;
+  left: 40rpx;
+  top: -150rpx;
+  background: white;
+  border-radius: 20rpx;
+  border-bottom: 1rpx solid #eeeded
+}
+
+.myClo-container{
+  width: 670rpx;
+  height: 100rpx;
+  position: relative;
+  left: 40rpx;
+  top: -150rpx;
+  background: white;
+  border-radius: 20rpx;
+}
+
+.myPost{
+  font-size: 28rpx;
+  color: #373A39;
+  margin-left: 60rpx;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.myClo{
+  font-size: 28rpx;
+  color: #373A39;
+  margin-left: 60rpx;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow{
+  width: 28rpx;
+  height: 28rpx;
+}
+
+.arrow-container{
+  position: relative;
+  top: -50%;
+  transform: translateY(50%);
+  left: 610rpx;
+}
+

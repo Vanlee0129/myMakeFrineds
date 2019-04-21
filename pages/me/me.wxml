@@ -1,0 +1,22 @@
+<view class="me-container">
+  <view class='head-background'></view>
+  <view class='me-card'>
+    <view class='myTx'></view>
+    <view class='myName'>我是用户名</view>
+    <view class='mySchool'>学校：上海海事大学</view>
+    <view class='mySex'>性别：男</view>
+    <view class='myBirth'>生日：1997-01-29</view>
+  </view>
+  <view class='myPost-container' bindtap='mypost'>
+    <view class='myPost'>我的帖子</view>
+    <view class='arrow-container'>
+      <image src='/images/tabBar/arrow.png' class='arrow'></image>
+    </view>
+  </view>
+  <view class='myClo-container' bindtap='myclo'>
+    <view class='myClo'>我的收藏</view>
+    <view class='arrow-container'>
+      <image src='/images/tabBar/arrow.png' class='arrow'></image>
+    </view>
+  </view>
+</view>

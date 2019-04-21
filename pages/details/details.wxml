@@ -1,0 +1,52 @@
+<view class='details-container'>
+  <view class='info-card'>
+    <view class='to-container' bindtap='details'>
+      <view class='tx-container'></view>
+      <view class='username-container'>
+        <view class='username'>我是用户名</view>
+      </view>
+      <view class='time-container'>
+        <view class='time'>1小时前</view>
+      </view>
+      <view class='content'>我是渣男，可以和你网恋吗</view>
+    </view>
+    <view class='line'></view>
+    <view class='like-container'>
+      <image src='/images/card/like.png' class='like'></image>
+      <view class='like-number'>{{like}}</view>
+    </view>
+    <view class='comment-container'>
+      <image src='/images/card/comment.png' class='like'></image>
+      <view class='like-number'>{{comment}}</view>
+    </view>
+    <view class='collection-container'>
+      <image src='/images/card/collection.png' class='like'></image>
+      <view class='like-number'>{{collection}}</view>
+    </view>
+  </view>
+</view>
+<!-- 评论区 -->
+<view class='com-container'>
+  <view class='head-container'>
+    <view class='comment-head'>评论区</view>
+  </view>
+</view>
+<scroll-view  scroll-y='{{true}}' style="height: 470px">
+<view class='comment-card' wx:for="{{30}}" wx:key="{{item}}">
+  <view class='to-container' bindtap='details'>
+    <view class='tx-container'></view>
+    <view class='username-container'>
+      <view class='username'>我是用户名</view>
+    </view>
+    <view class='time-container'>
+      <view class='time'>1小时前</view>
+    </view>
+    <view class='content'>我是渣男，可以和你网恋吗</view>
+  </view>
+  <view class='line'></view>
+</view>
+</scroll-view>
+<view class="release">
+  <textarea class="text" placeholder-class="input_null" fixed="{{true}}" maxlength="-1" auto-height="{{true}}" focus="{{releaseFocus}}" placeholder="回复 {{releaseName}}" show-confirm-bar='{{false}}' cursor-spacing='15' ></textarea>
+  <view class="submit">发送</view>
+</view>

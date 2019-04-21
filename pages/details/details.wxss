@@ -1,0 +1,186 @@
+/* pages/details/details.wxss */
+
+page {
+  background: rgba(242, 244, 243, 1);
+  width: 750rpx;
+}
+
+.info-card {
+  width: 750rpx;
+  padding-bottom: 100rpx;
+  background: white;
+  margin-bottom: 0rpx;
+  position: relative;
+  border-top: 1rpx rgb(240, 234, 234) solid;
+}
+
+.tx-container {
+  width: 80rpx;
+  height: 80rpx;
+  background: rgba(242, 244, 243, 1);
+  border-radius: 50%;
+  margin-left: 40rpx;
+  top: 25rpx;
+  position: absolute;
+}
+
+.username-container {
+  width: 300rpx;
+  height: 50rpx;
+  margin-left: 140rpx;
+  top: 24rpx;
+  position: relative;
+}
+
+.username {
+  font-size: 28rpx;
+  font-family: PingFang-SC-Bold;
+  font-weight: bold;
+  color: #373a39;
+}
+
+.time-container {
+  width: 300rpx;
+  height: 50rpx;
+  margin-left: 140rpx;
+  top: 18rpx;
+  position: relative;
+}
+
+.time {
+  font-size: 24rpx;
+  font-family: PingFang-SC-Regular;
+  font-weight: Regular;
+  color: #bababa;
+}
+
+.content {
+  font-family: PingFang-SC-Regular;
+  font-weight: Regular;
+  color: #373a39;
+  font-size: 24rpx;
+  margin-left: 142rpx;
+  position: relative;
+  top: 24rpx;
+  width: 660rpx;
+  word-wrap: break-word;
+  word-break: normal;
+}
+
+.line {
+  height: 0.5rpx;
+  width: 670rpx;
+  background: rgb(240, 234, 234);
+  margin-left: 40rpx;
+  position: relative;
+  top: 50rpx;
+}
+
+.like-container {
+  position: relative;
+  top: 85rpx;
+  margin-left: 38rpx;
+  display: inline-block;
+}
+
+.like {
+  width: 42rpx;
+  height: 42rpx;
+}
+
+.like-number {
+  font-size: 24rpx;
+  color: #373a39;
+  position: relative;
+  top: -13rpx;
+  margin-left: 10rpx;
+  display: inline-block;
+}
+
+.comment-container {
+  position: relative;
+  top: 85rpx;
+  margin-left: 95rpx;
+  display: inline-block;
+}
+
+.collection-container {
+  position: relative;
+  top: 85rpx;
+  margin-left: 95rpx;
+  display: inline-block;
+}
+
+.com-container{
+  position: relative;
+  top: 85rpx;
+}
+
+.head-container {
+  width: 750rpx;
+  height: 80rpx;
+  background: white;
+  position: relative;
+  top: -71rpx;
+  border-bottom: 1rpx rgb(240, 234, 234) solid;
+}
+
+.comment-head {
+  font-family: PingFang-SC-Regular;
+  font-weight: Regular;
+  font-size: 28rpx;
+  color: #373a39;
+  position: relative;
+  top: 18rpx;
+  left: 40rpx;
+}
+
+.comment-card {
+  width: 750rpx;
+  padding-bottom: 50rpx;
+  background: white;
+  margin-bottom: 0rpx;
+  position: relative;
+  top: 12rpx;
+}
+
+.input_null {
+  color: #c9c9c9;
+}
+
+.release { 
+  border-bottom: 1rpx rgb(240, 234, 234) solid;
+  display: flex;
+  align-items: flex-end; /*底部对齐*/
+  justify-content: space-between; /*两端对齐*/
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 18rpx 0 18rpx 30rpx;
+  background-color: #f7f8f7;
+  font-size: 28rpx;
+  z-index: 999;
+}
+
+.release .text {
+  width: 604rpx;
+  min-height: 34rpx;
+  max-height: 102rpx; /*最多显示三行*/
+  border-width: 15rpx 20rpx; /*使用padding与预期留白不一致，故使用border*/
+  border-style: solid;
+  border-color: #fff;
+  line-height: 34rpx;
+  font-size: 28rpx;
+  background-color: #fff;
+  border-radius: 4rpx;
+}
+
+.release .submit {
+  width: 116rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  color: #FFC0CB;
+}
