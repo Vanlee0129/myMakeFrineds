@@ -1,4 +1,9 @@
 /* pages/post/post.wxss */
+page{
+  width: 750rpx;
+  overflow: hidden;
+}
+
 .tab-bar {
   width: 750rpx;
   height: 80rpx;
@@ -9,36 +14,36 @@
   border-bottom: 1rpx solid #eeeded;
 }
 
-.cencelImage{
+.cencelImage {
   width: 42rpx;
   height: 42rpx;
   margin-left: 40rpx;
 }
 
-.postImage{
+.postImage {
   width: 42rpx;
   height: 42rpx;
   position: relative;
   left: 590rpx;
 }
 
-.navback{
+.navback {
   margin-top: 21rpx;
   display: inline-block;
 }
 
-.navpost{
+.navpost {
   margin-top: 21rpx;
   display: inline-block;
 }
 
-.content{
+.content {
   width: 670rpx;
   margin-top: 80rpx;
   transform: translateX(40rpx);
 }
 
-.inputarea{
+.inputarea {
   background: white;
   width: 100%;
   height: 530rpx;
@@ -51,7 +56,7 @@
   font-size: 28rpx;
 }
 
-.bar-container{
+.bar-container {
   width: 750rpx;
   height: 80rpx;
   background: white;
@@ -61,7 +66,7 @@
   border-bottom: 1rpx solid #eeeded;
 }
 
-._bar-container{
+._bar-container {
   width: 750rpx;
   height: 80rpx;
   background: white;
@@ -71,10 +76,12 @@
   border-bottom: 1rpx solid #eeeded;
 }
 
-.ima{
+.ima {
   width: 52rpx;
   height: 52rpx;
   display: inline-block;
   margin-top: 16rpx;
   margin-left: 40rpx;
 }
+
+

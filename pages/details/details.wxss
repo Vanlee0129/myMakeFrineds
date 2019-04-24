@@ -3,6 +3,7 @@
 page {
   background: rgba(242, 244, 243, 1);
   width: 750rpx;
+  overflow: hidden;
 }
 
 .info-card {
@@ -158,6 +159,7 @@ page {
   left: 0;
   bottom: 0;
   width: 100%;
+  margin-top: 50rpx;
   padding: 18rpx 0 18rpx 30rpx;
   background-color: #f7f8f7;
   font-size: 28rpx;
@@ -183,4 +185,6 @@ page {
   line-height: 64rpx;
   text-align: center;
   color: #FFC0CB;
+  position: relative;
+  display: inline-block;
 }

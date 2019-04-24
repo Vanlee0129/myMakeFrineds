@@ -5,29 +5,29 @@
       <view class="{{idxx?'_hot':'hot'}}" bindtap='changeColor' data-index='1'>最热</view>
     </view>
   </view>
-  <view class='info-card' wx:for="{{10}}" wx:key="{{item}}">
+  <view class='info-card' wx:for="{{usercard}}" wx:key="{{item}}">
     <view class='to-container' bindtap='details'>
       <view class='tx-container'></view>
       <view class='username-container'>
-        <view class='username'>我是用户名</view>
+        <view class='username'>{{item.username}}</view>
       </view>
       <view class='time-container'>
-        <view class='time'>1小时前</view>
+        <view class='time'>{{item.time}}</view>
       </view>
-      <view class='content'>我是渣男，可以和你网恋吗？</view>
+      <view class='content'>{{item.content}}</view>
     </view>
     <view class='line'></view>
-    <view class='like-container'>
-      <image src='/images/card/like.png' class='like'></image>
-      <view class='like-number'>{{like}}</view>
+    <view class='like-container' bindtap='changelike' data-index='{{index}}'>
+      <image src="{{!item.imagelike?'/images/card/like.png':'/images/card/clickLike.png'}}" class='like'></image>
+      <view class='like-number'>{{item.like}}</view>
     </view>
     <view class='comment-container'>
-      <image src='/images/card/comment.png' class='like'></image>
-      <view class='like-number'>{{comment}}</view>
+      <image src='/images/card/comment.png' class='like' bindtap='details'></image>
+      <view class='like-number'>{{item.comment}}</view>
     </view>
-    <view class='collection-container'>
-      <image src='/images/card/collection.png' class='like'></image>
-      <view class='like-number'>{{collection}}</view>
+    <view class='collection-container' bindtap='changecollection' data-index='{{index}}'>
+      <image src="{{!item.imagecollection?'/images/card/collection.png':'/images/card/clickCollection.png'}}" class='like'></image>
+      <view class='like-number'>{{item.collection}}</view>
     </view>
   </view>
 </view>

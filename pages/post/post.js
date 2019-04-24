@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    pheight: 0
+    pheight: 0,
+    btuBottom:""
   },
 
   getfocus(e) {
@@ -40,7 +41,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    const app = getApp()
+    var that = this
+    let isIphoneX = app.globalData.isIphoneX;
+    if (isIphoneX) {
+      this.setData({
+        btuBottom: "68rpx",
+      })
+    }
   },
 
   /**
@@ -54,6 +62,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
+    var that = this
     wx.hideTabBar({
 
     })

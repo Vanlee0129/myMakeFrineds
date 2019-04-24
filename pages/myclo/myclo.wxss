@@ -3,6 +3,7 @@
 page {
   background: rgba(242, 244, 243, 1);
   width: 750rpx;
+  overflow: hidden;
 }
 
 .info-card {

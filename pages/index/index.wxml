@@ -1,4 +1,8 @@
-<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
-  授权登录
-</button>
-<view wx:else>请升级微信版本</view>
+<view class='auth'>
+<image src='/images/card/start.png' class='start' mode="widthFix"></image>
+  <!-- <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class='button'>
+    开启美好相遇
+  </button>
+  <view wx:else>请升级微信版本</view> -->
+  <button class='click' wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo"></button>
+</view>

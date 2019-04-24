@@ -21,7 +21,8 @@ Page({
               console.log(res.userInfo)
               wx.switchTab({
                 url: '/pages/home/home',
-                success: function(e) {
+                success: function (e) {
+                  console.log("------")
                   var page = getCurrentPages().pop();
                   if (page == undefined || page == null) return;
                   page.onShow();
@@ -36,6 +37,15 @@ Page({
 
   bindGetUserInfo(e) {
     console.log(e.detail.userInfo)
+    wx.switchTab({
+      url: '/pages/home/home',
+      success: function (e) {
+        console.log("------")
+        var page = getCurrentPages().pop();
+        if (page == undefined || page == null) return;
+        page.onShow();
+      }
+    })
   },
 
   /**

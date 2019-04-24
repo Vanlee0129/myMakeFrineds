@@ -1,1 +1,28 @@
 /* pages/index/index.wxss */
+page{
+  background: #fff1f1;
+}
+
+.auth {
+  width: 100%;
+  height: 100%;
+}
+
+.click{
+  width:565rpx;
+  height:159rpx;
+  position:relative;
+  top:-259rpx;
+  left:0rpx;
+  background-color: transparent;
+}
+
+.click::after {
+  border: none;
+}
+
+.start {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

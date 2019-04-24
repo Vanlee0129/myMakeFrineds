@@ -8,14 +8,12 @@
     </view>
   </view>
 </view>
-
 <view class='content-container'>
   <view class='content'>
-    <textarea class='inputarea' placeholder-class="input_null" maxlength="-1" focus="{{releaseFocus}}" placeholder="您的内容 {{releaseName}}" bindfocus='getfocus' bindblur='delfocus' show-confirm-bar='{{false}}'></textarea>
+    <textarea class='inputarea' placeholder-class="input_null" maxlength="-1" focus="{{releaseFocus}}" placeholder="您的内容 {{releaseName}}" bindfocus='getfocus' bindblur='delfocus' show-confirm-bar='{{false}}' cursor-spacing="35"></textarea>
   </view>
 </view>
-
-<view class='bar-container' style='bottom: {{pheight}};'>
+<view class='bar-container' style="bottom:{{pheight}}; padding-bottom:{{btuBottom}}">
   <view class='bar-content'>
     <image src='/images/tabBar/ima.png' class='ima'></image>
     <image src='/images/tabBar/say.png' class='ima'></image>
