@@ -88,6 +88,12 @@ page {
   position: absolute;
 }
 
+.tx {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
 .username-container {
   width: 300rpx;
   height: 50rpx;

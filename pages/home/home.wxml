@@ -7,12 +7,14 @@
   </view>
   <view class='info-card' wx:for="{{usercard}}" wx:key="{{item}}">
     <view class='to-container' bindtap='details'>
-      <view class='tx-container'></view>
+      <view class='tx-container'>
+        <image class='tx' src='{{item.avatarUrl}}'></image>
+      </view>
       <view class='username-container'>
-        <view class='username'>{{item.username}}</view>
+        <view class='username'>{{item.user_name}}</view>
       </view>
       <view class='time-container'>
-        <view class='time'>{{item.time}}</view>
+        <view class='time'>{{item.createdAt}}</view>
       </view>
       <view class='content'>{{item.content}}</view>
     </view>

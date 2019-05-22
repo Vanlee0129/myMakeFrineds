@@ -5,11 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-    sex:['未知','男','女'],
-    index:''
+    sex: ['未知', '男', '女'],
+    index: '',
+    schoolName: '上海海事大学',
+    dataBirth: '1997 - 01 - 29'
   },
 
-  mypost(){
+  mypost() {
     wx.navigateTo({
       url: '../mypost/mypost',
     })

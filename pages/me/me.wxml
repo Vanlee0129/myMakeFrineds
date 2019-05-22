@@ -8,9 +8,9 @@
     <view class='myName'>
       <open-data type="userNickName"></open-data>
     </view>
-    <view class='mySchool'>学校：上海海事大学</view>
+    <view class='mySchool'>学校：{{schoolName}}</view>
     <view class='mySex'>性别：{{sex[index]}}</view>
-    <view class='myBirth'>生日：1997-01-29</view>
+    <view class='myBirth'>生日：{{dataBirth}}</view>
   </view>
   <view class='myPost-container' bindtap='mypost'>
     <view class='myPost'>我的帖子</view>

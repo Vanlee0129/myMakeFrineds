@@ -1,10 +1,13 @@
 const api = require('/api/api.js').api
 App({
   data: {
-
+    
   },
   globalData: {
-    isIphonex: false
+    isIphonex: false,
+    openid: '',
+    userName: '',
+    avatarUrl: ''
   },
   onLaunch: function (options) {
     var that = this

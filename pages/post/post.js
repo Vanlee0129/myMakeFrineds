@@ -6,24 +6,60 @@ Page({
    */
   data: {
     pheight: 0,
-    btuBottom:""
+    btuBottom:"",
+    contentValue:'',
   },
 
-  getfocus(e) {
+  submitPost() {
     var that = this
-    console.log(e.detail.height)
-    that.setData({
-      pheight: e.detail.height
+    const app = getApp()
+    let data = that.data
+    wx.request({
+      url: 'http://192.168.0.8:3000/postArticl',
+      method: 'POST',
+      data: {
+        content: data.contentValue,
+        user_id: app.globalData.openid,
+        userName: app.globalData.userName,
+        avatarUrl: app.globalData.avatarUrl
+      },
+      success: function() {
+        wx.showToast({
+          title: '成功',
+        })
+      }
     })
   },
 
-  delfocus(e) {
+  getTitleValue(e) {
     var that = this
-    console.log(e)
     that.setData({
-      pheight: 0
+      titleValue: e.detail.value
     })
   },
+
+  getContentValue(e) {
+    var that = this
+    that.setData({
+      contentValue: e.detail.value
+    })
+  },
+
+  // getfocus(e) {
+  //   var that = this
+  //   console.log(e.detail.height)
+  //   that.setData({
+  //     pheight: e.detail.height
+  //   })
+  // },
+
+  // delfocus(e) {
+  //   var that = this
+  //   console.log(e)
+  //   that.setData({
+  //     pheight: 0
+  //   })
+  // },
 
   navback() {
     var that = this
@@ -43,12 +79,16 @@ Page({
   onLoad: function(options) {
     const app = getApp()
     var that = this
-    let isIphoneX = app.globalData.isIphoneX;
-    if (isIphoneX) {
-      this.setData({
-        btuBottom: "68rpx",
-      })
-    }
+    console.log(app.globalData.openid)
+    that.setData({
+      user_id: app.globalData.openid
+    })
+    // let isIphoneX = app.globalData.isIphoneX;
+    // if (isIphoneX) {
+    //   this.setData({
+    //     btuBottom: "68rpx",
+    //   })
+    // }
   },
 
   /**
